@@ -14,7 +14,7 @@ spec:
       spec:
        containers:
         - name: harshbhatt12
-          image: harshbhatt12/docker-webapp3
+          image: harshbhatt12/containerized-application
           imagePullPolicy: Always
           ports:
           - containerPort: 80
