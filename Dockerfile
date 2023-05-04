@@ -8,11 +8,11 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN yum install -y httpd \
  zip\
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page291/carserv.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/element.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip carserv.zip
-RUN cp -rvf car-repair-html-template/* .
-RUN rm -rf car-repair-html-template carserv.zip
+RUN unzip element.zip
+RUN cp -rvf html/* .
+RUN rm -rf html element.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
