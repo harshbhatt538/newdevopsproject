@@ -10,9 +10,9 @@ RUN yum install -y httpd \
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page290/element.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip element.zip
-RUN cp -rvf element/* .
-RUN rm -rf element element.zip
+RUN unzip html.zip
+RUN cp -rvf html/* .
+RUN rm -rf html html.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
